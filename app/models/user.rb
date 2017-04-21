@@ -47,4 +47,7 @@ class User < ApplicationRecord
     self.favs.include?(micropost)
   end
   
+  #def feed_favs
+  #  Micropost.where(user_id: self.fav_ids + [self.id])
+  #end
 end
